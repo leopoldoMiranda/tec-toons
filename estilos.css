@@ -1,0 +1,18 @@
+ion-grid{
+    background-color: lightgray;
+}
+
+
+a>img{
+    border: solid 2px #33cc33;
+}
+
+ion-fab-button{
+    margin-left: 300px;
+}
+
+ion-item{
+    color: green;
+
+}
+

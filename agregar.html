@@ -1,0 +1,93 @@
+<!--position="floating" sirve para que el label se flote y añada texto ahi-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec-Toons</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+
+</head>
+<body>
+
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="dark">
+                <ion-title color='success' style="text-align: center;">Add new Toons</ion-title>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="contenido2">
+                
+                <ion-content >
+
+                    <!--Boton inicio-->
+                <ion-fab-button color="success" href="index.html" size="small"><!--Boton agregar caricaturas-->
+                    <ion-icon name="home-outline"></ion-icon>
+                </ion-fab-button>
+
+                    <ion-item class="contenido">
+                        <ion-label position="floating">Cartoon's name:</ion-label>
+                        <ion-input type="text" id="input-name" style="color: black;"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Year:</ion-label>
+                        <ion-input type="number" id="input-year" style="color: black;"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Genere:</ion-label>
+                        <ion-input type="text" id="input-genere" style="color: black;"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Author(s):</ion-label>
+                        <ion-input type="text" id="input-authors" style="color: black;"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Description:</ion-label>
+                        <ion-textarea type="text" id="input-description" style="color: black;"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="floating">Stars:</ion-label>
+                        <ion-input type="number" id="input-stars" style="color: black;"></ion-input>
+                    </ion-item>
+
+                    <!-------------------BOTONES--------------------------------------->   
+                    <ion-button fill="outline" color="danger" id="btn-clear">
+                        <ion-icon slot="start" name="close"></ion-icon>
+                        Limpiar
+                    </ion-button>
+                    
+                    <ion-button id="btn-confirm">
+                        <ion-icon slot="start" name="add"></ion-icon>
+                        Agregar caricatura
+                    </ion-button>
+
+                    <!-------------------nueva informacion--------------------------------------->   
+
+                  
+                        <ion-col>
+                            <ion-list id="listaCaricaturas">
+        
+                            </ion-list>
+                        </ion-col>
+                 
+                    
+
+                </ion-content>
+        </ion-content>
+    </ion-app>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
